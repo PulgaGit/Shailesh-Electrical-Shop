@@ -1,18 +1,18 @@
-/* Resetting default browser styles */
+/* Ensure everything is aligned as expected */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic body styling */
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Container for page content */
+/* Container style */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -46,24 +46,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #4caf50;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.hero h2 {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* Products Section */
+/* Product Section Styles */
 .products {
     padding: 30px 0;
     background-color: #fff;
@@ -71,28 +54,41 @@ nav ul li a {
 
 .products h3 {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
+    margin-bottom: 20px; /* Space after heading */
 }
 
-/* Product Categories */
-.product-category h3 {
-    font-size: 1.6rem;
+.product-list {
+    display: flex;
+    flex-direction: column; /* Stack products vertically */
+    align-items: flex-start;
+}
+
+.product {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h4 {
+    font-size: 1.8rem;
+    color: #4caf50; /* Green color for product headings */
     margin-bottom: 10px;
 }
 
-.product-category ul {
-    list-style-type: none;
-    margin-left: 20px;
+.product ul {
+    margin-left: 20px; /* Indentation for subcategories */
 }
 
-.product-category ul li {
+.product ul li {
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
-.product-category ul li strong {
-    color: #4caf50; /* Green color for the subheading */
+.product ul li strong {
+    color: #333;
 }
 
 /* Footer Styles */
@@ -101,4 +97,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
 }
