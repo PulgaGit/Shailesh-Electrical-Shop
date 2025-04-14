@@ -54,7 +54,8 @@ nav ul li a {
 
 .products h3 {
     text-align: center;
-    margin-bottom: 20px; /* Space after heading */
+    margin-bottom: 20px;
+    font-size: 2rem; /* Same font size as "Our Products" */
 }
 
 .product-list {
@@ -73,7 +74,7 @@ nav ul li a {
 }
 
 .product h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;  /* Same size for product headings as 'Our Products' */
     color: #4caf50; /* Green color for product headings */
     margin-bottom: 10px;
 }
