@@ -1,185 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Patel Electronics - Products</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Patel Electronics</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Ensure everything is aligned as expected */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section class="products">
-        <div class="container">
-            <h2>Our Products</h2>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-            <div class="product-category">
-                <h3>1. Electrical Wiring & Cables</h3>
-                <ul>
-                    <li><strong>Wires:</strong> Copper, Aluminium, PVC, Flexible, Insulated Wires.</li>
-                    <li><strong>Cables:</strong> Multicore, Armoured, Coaxial, Telephone Cables.</li>
-                    <li><strong>Extension Cords:</strong> Multi-plug extension boards, Reel extension cords.</li>
-                </ul>
-            </div>
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
 
-            <div class="product-category">
-                <h3>2. Switches & Sockets</h3>
-                <ul>
-                    <li><strong>Switches:</strong> Single-pole, Double-pole, Modular switches, Dimmer switches.</li>
-                    <li><strong>Sockets:</strong> 3-pin, 5-pin, Modular sockets, USB charging sockets.</li>
-                    <li><strong>Electrical Boards & Panels:</strong> Distribution boards, MCB (Miniature Circuit Breaker), RCD (Residual Current Device) panels.</li>
-                </ul>
-            </div>
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-            <div class="product-category">
-                <h3>3. Light Fixtures & Bulbs</h3>
-                <ul>
-                    <li><strong>LED Bulbs:</strong> LED, CFL, and Incandescent bulbs.</li>
-                    <li><strong>Ceiling Lights:</strong> Chandeliers, Decorative lights, Panel lights.</li>
-                    <li><strong>Tube Lights:</strong> Fluorescent, LED tube lights, Retrofit tube lights.</li>
-                    <li><strong>Downlights:</strong> Recessed lighting, Spotlights.</li>
-                </ul>
-            </div>
+header h1 {
+    margin-bottom: 10px;
+}
 
-            <div class="product-category">
-                <h3>4. Fans</h3>
-                <ul>
-                    <li><strong>Ceiling Fans:</strong> Regular, Decorative, Energy-efficient fans.</li>
-                    <li><strong>Table Fans:</strong> Oscillating and non-oscillating.</li>
-                    <li><strong>Exhaust Fans:</strong> For kitchens and bathrooms.</li>
-                    <li><strong>Pedestal Fans:</strong> Adjustable height.</li>
-                </ul>
-            </div>
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
-            <div class="product-category">
-                <h3>5. Electrical Appliances</h3>
-                <ul>
-                    <li><strong>Voltage Stabilizers:</strong> For appliances and industrial use.</li>
-                    <li><strong>Surge Protectors:</strong> For electronic gadgets and equipment.</li>
-                    <li><strong>UPS (Uninterruptible Power Supply):</strong> For computers and other sensitive electronics.</li>
-                    <li><strong>Water Heaters:</strong> Geysers (storage, instant, and solar).</li>
-                    <li><strong>Air Conditioners:</strong> Window and Split ACs.</li>
-                </ul>
-            </div>
+nav ul li {
+    margin: 0 15px;
+}
 
-            <div class="product-category">
-                <h3>6. Electrical Tools</h3>
-                <ul>
-                    <li><strong>Soldering Equipment:</strong> Soldering irons, soldering wires.</li>
-                    <li><strong>Testing Tools:</strong> Multimeters, Clamp meters, Voltage testers.</li>
-                    <li><strong>Cutting & Stripping Tools:</strong> Wire cutters, Cable strippers, Crimping tools.</li>
-                    <li><strong>Pliers & Screwdrivers:</strong> Insulated, non-insulated.</li>
-                </ul>
-            </div>
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-            <div class="product-category">
-                <h3>7. Circuit Breakers & Fuses</h3>
-                <ul>
-                    <li><strong>MCBs (Miniature Circuit Breakers):</strong> For protecting circuits from overload.</li>
-                    <li><strong>RCCBs (Residual Current Circuit Breakers):</strong> For preventing electric shock.</li>
-                    <li><strong>Fuses:</strong> For appliances and electrical panels.</li>
-                </ul>
-            </div>
+/* Product Section Styles */
+.products {
+    padding: 30px 0;
+    background-color: #fff;
+}
 
-            <div class="product-category">
-                <h3>8. Electrical Consumables</h3>
-                <ul>
-                    <li><strong>Battery Chargers:</strong> For various types of batteries (car, mobile, etc.).</li>
-                    <li><strong>Batteries:</strong> AA, AAA, 9V, and rechargeable batteries.</li>
-                    <li><strong>Sockets & Plugs:</strong> Various configurations (3-pin, 2-pin).</li>
-                    <li><strong>Connectors:</strong> Terminal blocks, Electrical connectors, Butt connectors.</li>
-                </ul>
-            </div>
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-            <div class="product-category">
-                <h3>9. Home Automation & Smart Devices</h3>
-                <ul>
-                    <li><strong>Smart Switches:</strong> Wi-Fi enabled switches for controlling appliances.</li>
-                    <li><strong>Smart Plugs:</strong> For controlling electrical devices remotely.</li>
-                    <li><strong>Sensors:</strong> Motion sensors, Light sensors.</li>
-                    <li><strong>Smart Lighting:</strong> Wi-Fi or Bluetooth-controlled lights.</li>
-                </ul>
-            </div>
+.product-category h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
 
-            <div class="product-category">
-                <h3>10. Electrical Components & Spares</h3>
-                <ul>
-                    <li><strong>Resistors, Capacitors, Diodes, Transistors:</strong> Basic components for electronics repair.</li>
-                    <li><strong>Transformers:</strong> For step-up or step-down voltage conversion.</li>
-                    <li><strong>Relays & Timers:</strong> For automation systems.</li>
-                    <li><strong>Inductors:</strong> For various electrical applications.</li>
-                </ul>
-            </div>
+.product-category ul {
+    list-style-type: none;  /* Remove default bullets */
+    margin-left: 20px; /* Indentation for subcategories */
+}
 
-            <div class="product-category">
-                <h3>11. Safety Equipment</h3>
-                <ul>
-                    <li><strong>Insulated Gloves:</strong> For handling electrical work safely.</li>
-                    <li><strong>Earthing Rods:</strong> For proper grounding of electrical systems.</li>
-                    <li><strong>Circuit Testers:</strong> To check for electrical faults.</li>
-                </ul>
-            </div>
+.product-category ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
 
-            <div class="product-category">
-                <h3>12. Industrial Electrical Equipment</h3>
-                <ul>
-                    <li><strong>Industrial Fans:</strong> For large-scale ventilation.</li>
-                    <li><strong>Electric Motors:</strong> Single-phase, Three-phase.</li>
-                    <li><strong>Generators:</strong> Diesel or Petrol-powered backup generators.</li>
-                    <li><strong>Industrial Panels:</strong> For high-power installations.</li>
-                    <li><strong>Welding Machines:</strong> Electric arc welders.</li>
-                </ul>
-            </div>
+.product-category ul li strong {
+    color: #4caf50; /* Green color for the subheading */
+}
 
-            <div class="product-category">
-                <h3>13. Solar Equipment</h3>
-                <ul>
-                    <li><strong>Solar Panels:</strong> Photovoltaic solar modules.</li>
-                    <li><strong>Solar Inverters:</strong> For converting DC to AC.</li>
-                    <li><strong>Solar Batteries:</strong> Deep cycle, maintenance-free batteries.</li>
-                    <li><strong>Solar Charge Controllers:</strong> For managing the power flow.</li>
-                </ul>
-            </div>
-
-            <div class="product-category">
-                <h3>14. Audio & Visual Equipment</h3>
-                <ul>
-                    <li><strong>Speakers:</strong> Wired and wireless (Bluetooth, surround sound systems).</li>
-                    <li><strong>Microphones & Amplifiers:</strong> For PA systems and home use.</li>
-                    <li><strong>Cables:</strong> HDMI, audio, video, speaker wires.</li>
-                </ul>
-            </div>
-
-            <div class="product-category">
-                <h3>15. Miscellaneous Items</h3>
-                <ul>
-                    <li><strong>Clamps & Clips:</strong> For cables and wires.</li>
-                    <li><strong>Cable Trays:</strong> For organizing wiring.</li>
-                    <li><strong>Tape:</strong> Insulating tape, electrical tape, duct tape.</li>
-                    <li><strong>Conduits & Pipes:</strong> PVC and flexible conduits for wiring.</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Patel Electronics. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
