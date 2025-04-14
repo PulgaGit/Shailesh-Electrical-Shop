@@ -1,16 +1,18 @@
-/* Ensure everything is aligned as expected */
+/* Resetting default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Container for page content */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -44,25 +46,44 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Product Section Styles */
+/* Hero Section */
+.hero {
+    background-color: #4caf50;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Products Section */
 .products {
     padding: 30px 0;
     background-color: #fff;
 }
 
-.products h2 {
+.products h3 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 2rem;
 }
 
+/* Product Categories */
 .product-category h3 {
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
 .product-category ul {
-    list-style-type: none;  /* Remove default bullets */
-    margin-left: 20px; /* Indentation for subcategories */
+    list-style-type: none;
+    margin-left: 20px;
 }
 
 .product-category ul li {
